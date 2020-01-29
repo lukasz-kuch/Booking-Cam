@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>bc</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 10:59:59</sys_created_on>
+        <sys_id>fe5f9b341bf10010cad7da49cc4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bc</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sp_page_fe5f9b341bf10010cad7da49cc4bcb7a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 10:59:59</sys_updated_on>
+        <title>Booking Camera</title>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=fe5f9b341bf10010cad7da49cc4bcb7a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</application>
+        <file_path/>
+        <instance_id>02976774dbc3734042b321c40596193a</instance_id>
+        <instance_name>dev90223</instance_name>
+        <name>sp_page_fe5f9b341bf10010cad7da49cc4bcb7a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>bc</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-16 10:59:59</sys_created_on><sys_id>fe5f9b341bf10010cad7da49cc4bcb7a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bc</sys_name><sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package><sys_policy/><sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope><sys_update_name>sp_page_fe5f9b341bf10010cad7da49cc4bcb7a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-16 10:59:59</sys_updated_on><title>Booking Camera</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=fe5f9b341bf10010cad7da49cc4bcb7a"/></record_update>]]></payload>
+        <payload_hash>577301453</payload_hash>
+        <record_name>bc</record_name>
+        <reverted_from/>
+        <source>0a4627f71b610010cad7da49cc4bcb8f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 10:59:59</sys_created_on>
+        <sys_id>887f1f341bf10010cad7da49cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f0e5d66990000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 10:59:59</sys_updated_on>
+        <type>Page</type>
+        <update_guid>c07f1f34c5f10010d18e69494132e066</update_guid>
+        <update_guid_history>c07f1f34c5f10010d18e69494132e066:577301453</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="bc">b7dcff411bf14010cad7da49cc4bcb23</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-17 07:47:05</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>5c18da290f3744b09e3f7deb194b5584</sys_id>
+        <sys_metadata>fe5f9b341bf10010cad7da49cc4bcb7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bc</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_scope_delete display_value="">2909777230cb48819ee492c6034a5679</sys_scope_delete>
+        <sys_update_name>sp_page_fe5f9b341bf10010cad7da49cc4bcb7a</sys_update_name>
+        <sys_update_version display_value="sp_page_fe5f9b341bf10010cad7da49cc4bcb7a">887f1f341bf10010cad7da49cc4bcb66</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-17 07:47:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

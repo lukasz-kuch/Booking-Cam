@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>choose_camera</element>
+        <name>x_365068_booking_c_reservations</name>
+        <style>background-color:lightgreen;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-19 09:58:37</sys_created_on>
+        <sys_id>151e22751bb10010cad7da49cc4bcbef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_365068_booking_c_reservations</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sys_ui_style_151e22751bb10010cad7da49cc4bcbef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-19 10:07:59</sys_updated_on>
+        <value>Camera 3</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=151e22751bb10010cad7da49cc4bcbef"/>
+</record_update>

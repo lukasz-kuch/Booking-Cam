@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="city" table="x_365068_booking_c_reservations" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>city</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Katowice</label>
+            <language>en</language>
+            <name>x_365068_booking_c_reservations</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-19 08:05:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>085496b91b310010cad7da49cc4bcb8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-19 08:05:54</sys_updated_on>
+            <value>katowice</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>city</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lodz</label>
+            <language>en</language>
+            <name>x_365068_booking_c_reservations</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-19 08:05:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f334daf91b310010cad7da49cc4bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-19 08:05:35</sys_updated_on>
+            <value>lodz</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <name>x_365068_booking_c_reservations</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-19 08:05:35</sys_created_on>
+            <sys_id>9a44d6b91b310010cad7da49cc4bcb75</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>city</sys_name>
+            <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+            <sys_update_name>sys_choice_x_365068_booking_c_reservations_city</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-19 08:05:35</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

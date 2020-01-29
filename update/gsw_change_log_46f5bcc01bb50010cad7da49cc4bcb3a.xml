@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2019-12-13 14:44:07</change_date>
+        <changed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</changed_by>
+        <content display_value="Normalize Configuration Items (CMDB) ">70728f260b111200a8d7a12cf6673a56</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-13 14:44:07</sys_created_on>
+        <sys_id>46f5bcc01bb50010cad7da49cc4bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2019-12-13 14:44:07</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>gsw_change_log_46f5bcc01bb50010cad7da49cc4bcb3a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-13 14:44:07</sys_updated_on>
+        <type>4</type>
+    </gsw_change_log>
+</record_update>

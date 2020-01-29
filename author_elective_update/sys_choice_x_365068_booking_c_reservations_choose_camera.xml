@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="choose_camera" table="x_365068_booking_c_reservations" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>lodz</dependent_value>
+            <element>choose_camera</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Camera 1</label>
+            <language>en</language>
+            <name>x_365068_booking_c_reservations</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:13:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>60f7ff7b1ba10010cad7da49cc4bcbed</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-19 09:21:13</sys_updated_on>
+            <value>Camera 1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>lodz</dependent_value>
+            <element>choose_camera</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Camera 2</label>
+            <language>en</language>
+            <name>x_365068_booking_c_reservations</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:13:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a0f7ff7b1ba10010cad7da49cc4bcbee</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-19 09:21:17</sys_updated_on>
+            <value>Camera 2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>katowice</dependent_value>
+            <element>choose_camera</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Camera 3</label>
+            <language>en</language>
+            <name>x_365068_booking_c_reservations</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:13:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>20f7ff7b1ba10010cad7da49cc4bcbef</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-19 09:21:21</sys_updated_on>
+            <value>Camera 3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>choose_camera</element>
+            <name>x_365068_booking_c_reservations</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:13:09</sys_created_on>
+            <sys_id>a8f7ff7b1ba10010cad7da49cc4bcbed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>choose_camera</sys_name>
+            <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+            <sys_update_name>sys_choice_x_365068_booking_c_reservations_choose_camera</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-13 10:13:09</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

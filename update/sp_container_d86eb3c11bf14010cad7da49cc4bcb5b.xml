@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>booking camera - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="booking_camera">1eec88411bb50010cad7da49cc4bcbd4</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-17 07:53:39</sys_created_on>
+        <sys_id>d86eb3c11bf14010cad7da49cc4bcb5b</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>booking camera - Container 2</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sp_container_d86eb3c11bf14010cad7da49cc4bcb5b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-19 17:11:34</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

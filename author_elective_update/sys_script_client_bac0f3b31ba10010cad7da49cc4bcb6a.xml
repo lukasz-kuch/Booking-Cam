@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>purpose</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Visibility date fileds</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    if (newValue === 'Only for an exam' || newValue === 'Only for registration') {
+        g_form.setVisible('from', false);
+        g_form.setVisible('to', false);
+    } else if (newValue === 'Exam/Registartion') {
+        g_form.setVisible('exam_date', false);
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-13 09:46:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bac0f3b31ba10010cad7da49cc4bcb6a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Visibility date fileds</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sys_script_client_bac0f3b31ba10010cad7da49cc4bcb6a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-13 09:50:47</sys_updated_on>
+        <table>x_365068_booking_c_reservations</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</application>
+        <file_path/>
+        <instance_id>02976774dbc3734042b321c40596193a</instance_id>
+        <instance_name>dev90223</instance_name>
+        <name>sys_script_client_bac0f3b31ba10010cad7da49cc4bcb6a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;purpose&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Visibility date fileds&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    if (newValue === 'Only for an exam' || newValue === 'Only for registration') {
+        g_form.setVisible('from', false);
+        g_form.setVisible('to', false);
+    } else if (newValue === 'Exam/Registartion') {
+        g_form.setVisible('exam_date', false);
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-13 09:46:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bac0f3b31ba10010cad7da49cc4bcb6a&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Visibility date fileds&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Booking Camera" source="x_365068_booking_c"&gt;064627f71b610010cad7da49cc4bcb8d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Booking Camera"&gt;064627f71b610010cad7da49cc4bcb8d&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_bac0f3b31ba10010cad7da49cc4bcb6a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-13 09:50:47&lt;/sys_updated_on&gt;&lt;table&gt;x_365068_booking_c_reservations&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-375423850</payload_hash>
+        <record_name>Visibility date fileds</record_name>
+        <reverted_from/>
+        <source>0a4627f71b610010cad7da49cc4bcb8f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-13 09:50:47</sys_created_on>
+        <sys_id>89d23ff31ba10010cad7da49cc4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16efeaaf79f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-13 09:50:47</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>05d23ff331a100101ac63e654697fc7f</update_guid>
+        <update_guid_history>05d23ff331a100101ac63e654697fc7f:-375423850,9692373756a10010ba8d683b0b796bc9:1894913541,c742b33734a1001087fb1b28a82cb833:1672159566,88e1bf73dca1001012ba179d2238b13a:-1703629049</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-13 09:51:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>66c3308640b748c28b07b8588beacfc4</sys_id>
+        <sys_metadata>bac0f3b31ba10010cad7da49cc4bcb6a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Visibility date fileds</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_parent display_value="Reservations">7ba96bbb1b610010cad7da49cc4bcbdc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_scope_delete display_value="">2909777230cb48819ee492c6034a5679</sys_scope_delete>
+        <sys_update_name>sys_script_client_bac0f3b31ba10010cad7da49cc4bcb6a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_bac0f3b31ba10010cad7da49cc4bcb6a">89d23ff31ba10010cad7da49cc4bcb7f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-13 09:51:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

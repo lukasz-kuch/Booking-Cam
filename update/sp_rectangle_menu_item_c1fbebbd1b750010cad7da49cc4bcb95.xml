@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>arrow-left</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Go Back</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="booking_camera">1eec88411bb50010cad7da49cc4bcbd4</sp_page>
+        <sp_rectangle_menu display_value="Camera Menu">f8ebabbd1b750010cad7da49cc4bcb57</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-19 14:29:39</sys_created_on>
+        <sys_id>c1fbebbd1b750010cad7da49cc4bcb95</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Go Back</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_c1fbebbd1b750010cad7da49cc4bcb95</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-19 14:46:30</sys_updated_on>
+        <table/>
+        <type>url</type>
+        <url>https://dev90223.service-now.com/bc</url>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=c1fbebbd1b750010cad7da49cc4bcb95"/>
+</record_update>

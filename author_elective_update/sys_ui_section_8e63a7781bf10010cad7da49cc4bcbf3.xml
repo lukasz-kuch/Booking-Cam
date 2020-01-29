@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="8e63a7781bf10010cad7da49cc4bcbf3" sys_domain="global" table="x_365068_booking_c_reservations" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-16 11:17:21</sys_created_on>
+            <sys_id>d263e7781bf10010cad7da49cc4bcb8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_365068_booking_c_reservations" sys_domain="global" view="Default view">8e63a7781bf10010cad7da49cc4bcbf3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-16 11:17:21</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>1e63e7781bf10010cad7da49cc4bcb88</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-16 11:17:21</sys_created_on>
+            <sys_id>5663e7781bf10010cad7da49cc4bcb94</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_365068_booking_c_reservations" sys_domain="global" view="Default view">8e63a7781bf10010cad7da49cc4bcbf3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-16 11:17:21</sys_updated_on>
+            <sys_user/>
+            <type>chart</type>
+        </sys_ui_element>
+        <sys_ui_chart action="INSERT_OR_UPDATE">
+            <form_field/>
+            <height>300</height>
+            <label/>
+            <report/>
+            <report_field/>
+            <report_qual/>
+            <section caption="New Section" display_value="New Section" name="x_365068_booking_c_reservations" sys_domain="global" view="Default view">8e63a7781bf10010cad7da49cc4bcbf3</section>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-16 11:17:21</sys_created_on>
+            <sys_id>1e63e7781bf10010cad7da49cc4bcb88</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-16 11:17:21</sys_updated_on>
+        </sys_ui_chart>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_365068_booking_c_reservations</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-16 11:17:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e63a7781bf10010cad7da49cc4bcbf3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>New Section</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+            <sys_update_name>sys_ui_section_8e63a7781bf10010cad7da49cc4bcbf3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-16 11:17:20</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</application>
+        <file_path/>
+        <instance_id>02976774dbc3734042b321c40596193a</instance_id>
+        <instance_name>dev90223</instance_name>
+        <name>sys_ui_section_8e63a7781bf10010cad7da49cc4bcbf3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="8e63a7781bf10010cad7da49cc4bcbf3" sys_domain="global" table="x_365068_booking_c_reservations" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>activity.xml</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-16 11:17:21</sys_created_on><sys_id>d263e7781bf10010cad7da49cc4bcb8a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter><sys_ui_section caption="New Section" display_value="New Section" name="x_365068_booking_c_reservations" sys_domain="global" view="Default view">8e63a7781bf10010cad7da49cc4bcbf3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-16 11:17:21</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>1e63e7781bf10010cad7da49cc4bcb88</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-16 11:17:21</sys_created_on><sys_id>5663e7781bf10010cad7da49cc4bcb94</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_365068_booking_c_reservations" sys_domain="global" view="Default view">8e63a7781bf10010cad7da49cc4bcbf3</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-16 11:17:21</sys_updated_on><sys_user/><type>chart</type></sys_ui_element><sys_ui_chart action="INSERT_OR_UPDATE"><form_field/><height>300</height><label/><report/><report_field/><report_qual/><section caption="New Section" display_value="New Section" name="x_365068_booking_c_reservations" sys_domain="global" view="Default view">8e63a7781bf10010cad7da49cc4bcbf3</section><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-16 11:17:21</sys_created_on><sys_id>1e63e7781bf10010cad7da49cc4bcb88</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-16 11:17:21</sys_updated_on></sys_ui_chart><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_365068_booking_c_reservations</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-16 11:17:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8e63a7781bf10010cad7da49cc4bcbf3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New Section</sys_name><sys_overrides/><sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package><sys_policy/><sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope><sys_update_name>sys_ui_section_8e63a7781bf10010cad7da49cc4bcbf3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-16 11:17:20</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-15233920</payload_hash>
+        <record_name>Reservations</record_name>
+        <reverted_from/>
+        <source>0a4627f71b610010cad7da49cc4bcb8f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 11:17:21</sys_created_on>
+        <sys_id>5663e7781bf10010cad7da49cc4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f0e6d4b9b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 11:17:21</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>de63e778c1f10010db4a796a3ac5e495</update_guid>
+        <update_guid_history>de63e778c1f10010db4a796a3ac5e495:-15233920</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 11:19:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>765b70be20bd40f6b67253b732d7a779</sys_id>
+        <sys_metadata>8e63a7781bf10010cad7da49cc4bcbf3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_parent display_value="Reservations">7ba96bbb1b610010cad7da49cc4bcbdc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_scope_delete display_value="">2909777230cb48819ee492c6034a5679</sys_scope_delete>
+        <sys_update_name>sys_ui_section_8e63a7781bf10010cad7da49cc4bcbf3</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_8e63a7781bf10010cad7da49cc4bcbf3">5663e7781bf10010cad7da49cc4bcb96</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 11:19:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

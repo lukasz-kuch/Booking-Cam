@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">260b1bfc1bb10010cad7da49cc4bcb0e</grid_canvas>
+        <height>15</height>
+        <portal_widget display_value="Created 2019-12-16 02:41:57">e34b5bfc1bb10010cad7da49cc4bcbe8</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 10:41:57</sys_created_on>
+        <sys_id>6f4b5bfc1bb10010cad7da49cc4bcbe9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>260b1bfc1bb10010cad7da49cc4bcb0e</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_6f4b5bfc1bb10010cad7da49cc4bcbe9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 10:42:07</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

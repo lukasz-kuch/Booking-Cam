@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>exam_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Check camera</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var myArray = [];
+
+    var ga = new GlideAjax("Checkavailablecamera");
+    ga.addParam('sysparm_name', 'checkCamera');
+    ga.addParam('sysparm_date', newValue);
+    ga.getXMLAnswer(getResult);
+
+    function getResult(answer) {
+        myArray = JSON.parse(answer);
+        if (myArray.length == 3) {
+            g_form.addErrorMessage("Sorry but for this day all cameras are already reserved.");
+        } else {
+            for (var i = 0; i < myArray.length; i++) {
+                g_form.removeOption('choose_camera', myArray[i]);
+
+            }
+        }
+
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-13 10:55:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da6104001bf10010cad7da49cc4bcbeb</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>Check camera</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sys_script_client_da6104001bf10010cad7da49cc4bcbeb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-17 09:47:10</sys_updated_on>
+        <table>x_365068_booking_c_reservations</table>
+        <type>onChange</type>
+        <ui_type>1</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</application>
+        <file_path/>
+        <instance_id>02976774dbc3734042b321c40596193a</instance_id>
+        <instance_name>dev90223</instance_name>
+        <name>sys_script_client_da6104001bf10010cad7da49cc4bcbeb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;exam_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Check camera&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var myArray = [];
+
+    var ga = new GlideAjax("Checkavailablecamera");
+    ga.addParam('sysparm_name', 'checkCamera');
+    ga.addParam('sysparm_date', newValue);
+    ga.getXMLAnswer(getResult);
+
+    function getResult(answer) {
+        myArray = JSON.parse(answer);
+        if (myArray.length == 3) {
+            g_form.addErrorMessage("Sorry but for this day all cameras are already reserved.");
+        } else {
+            for (var i = 0; i &lt; myArray.length; i++) {
+                g_form.removeOption('choose_camera', myArray[i]);
+
+            }
+        }
+
+    }
+
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-13 10:55:21&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;da6104001bf10010cad7da49cc4bcbeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;39&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check camera&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Booking Camera" source="x_365068_booking_c"&gt;064627f71b610010cad7da49cc4bcb8d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Booking Camera"&gt;064627f71b610010cad7da49cc4bcb8d&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_da6104001bf10010cad7da49cc4bcbeb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-17 09:47:10&lt;/sys_updated_on&gt;&lt;table&gt;x_365068_booking_c_reservations&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;1&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>579545052</payload_hash>
+        <record_name>Check camera</record_name>
+        <reverted_from/>
+        <source>0a4627f71b610010cad7da49cc4bcb8f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-17 09:47:10</sys_created_on>
+        <sys_id>0b5854d91b354010cad7da49cc4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f134116c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-17 09:47:10</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>835854d96f3540105dec4f3c5fb0cbc2</update_guid>
+        <update_guid_history>835854d96f3540105dec4f3c5fb0cbc2:579545052,8b0aa408f77500105376dd4e30681aac:141535549,cd69ac44f0750010eaa1fb06fb602517:-1904024100,3d29e4447d75001038f22307416b7f71:1587370007,f736a0045175001067c0d00e7b6cf055:-2002828108,4d2620049c75001025541095a101ae7a:619391109,f006ec8051750010864bda1a4cb22c72:1186616332,3d95ec8027750010976e9cbd08cd2fae:-342392731,c575ecc052750010445487e727e8cda6:39625391,1a54ec807c7500100a55501463eb6f6a:593232465,f024e480d47500108adec505e6c50fab:-178046581,ab636040ec750010cfd1c4b217b18852:-797827372,38a2a040e6750010875c5120f83bea3d:-178046581,f452a0cce3350010aa930f1e2a6a213c:-2015614076,7912a000d6750010e6a355b513f81512:-1168807100,43a1ac8c5c350010adab8c2bb14ecb95:-1505339171,9961a0008a750010cf90945cd8f8000b:-1006893162,7e80a88cf5350010cbee7b77d277e19c:-668674486,0550e48cc93500106393a0957d5e79b7:-1010704598,0a4060ccf435001070eb82b2bd443008:-117238580,6cafd84ca7350010e12caa536a23b485:1555629921,156f104ca6350010c8d8895bfcf53453:-905730385,68de104c123500107774d390b770014e:1358113364,df0ed088e23500102d9cf0fdf25c772c:-1945618861,586b1888a8350010e29824784bcfd2b2:1758592626,92fad8488a350010178cb7c8da865181:882062090,955a184859350010c45505f00114b9b6:444694101,611a14485e350010730471574da7f055:-1087339915,ac3558c019350010df87628c701a28a5:-2068203817,d9d45cc0c93500109b35cc8fca65c1a4:-1532774976,d312dc40f835001035ae5ad01fe75328:-1088046851,6901508c33f10010ac0ce992250e9e91:-1337547540,d6f010cc25f100100e637e2da8135761:1125339948,b2a01800a73500103a0e7f5ab64170f3:1843688900,f11f80cc45f10010bfc2b6bca9a95273:1265493823,9e750c4463f100105d2050c8e777e364:-587023446,b5c480c0cef1001021c3e0f75734d6ac:838428027,8874084803b10010a795a70920e30ef1:1716246502,36a1440050f1001042a9845f066a59a2:1157947856,b6918c8027f100105f2684d553f38b9f:1935677360</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-18 07:48:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>248bb27a4e90455f92cde7ced33f3239</sys_id>
+        <sys_metadata>da6104001bf10010cad7da49cc4bcbeb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check camera</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_parent display_value="Reservations">7ba96bbb1b610010cad7da49cc4bcbdc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_scope_delete display_value="">2909777230cb48819ee492c6034a5679</sys_scope_delete>
+        <sys_update_name>sys_script_client_da6104001bf10010cad7da49cc4bcbeb</sys_update_name>
+        <sys_update_version display_value="sys_script_client_da6104001bf10010cad7da49cc4bcbeb">0b5854d91b354010cad7da49cc4bcbc2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-18 07:48:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

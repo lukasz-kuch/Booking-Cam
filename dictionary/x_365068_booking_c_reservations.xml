@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="calendar_elements=city;time;user;choose_camera" audit="true" label="Reservations" max_length="40" name="x_365068_booking_c_reservations" type="collection">
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" dependent="city" dependent_on_field="city" label="Camera" mandatory="true" max_length="40" name="choose_camera" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="lodz" inactive_on_update="false" label="Camera 1" sequence="0" value="Camera 1"/>
+                <element dependent_value="lodz" inactive_on_update="false" label="Camera 2" sequence="1" value="Camera 2"/>
+                <element dependent_value="katowice" inactive_on_update="false" label="Camera 3" sequence="2" value="Camera 3"/>
+            </choice>
+        </element>
+        <element choice="1" label="City" mandatory="true" max_length="40" name="city" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Katowice" value="katowice"/>
+                <element inactive_on_update="false" label="Lodz" value="lodz"/>
+            </choice>
+        </element>
+        <element label="Date" mandatory="true" max_length="40" name="date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="only for an exam" label="Purpose" mandatory="true" max_length="40" name="purpose" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Only for an exam" sequence="0" value="only for an exam"/>
+                <element inactive_on_update="false" label="Only for registration" sequence="1" value="only for registration"/>
+                <element inactive_on_update="false" label="Exam/Registartion" sequence="2" value="exam/registartion"/>
+            </choice>
+        </element>
+        <element default="12:00:00" label="Time(00:00:00)" mandatory="true" max_length="40" name="time" type="glide_time"/>
+        <element attributes="encode_utf8=false" label="User" mandatory="true" max_length="32" name="user" reference="sys_user" reference_qual="roles=x_365068_booking_c.cam_user^EQ" reference_qual_condition="roles=x_365068_booking_c.cam_user^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="2000" name="u_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Location" max_length="40" name="u_exam_location" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Office" sequence="0" value="home"/>
+                <element inactive_on_update="false" label="Home" sequence="1" value="office"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="reserved" label="State" max_length="40" name="u_state" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Awaiting" sequence="0" value="awaiting"/>
+                <element inactive_on_update="false" label="Reserved" sequence="0" value="reserved"/>
+                <element inactive_on_update="false" label="Disposed" sequence="1" value="disposed"/>
+                <element inactive="true" inactive_on_update="true" label="Elapsed" sequence="1" value="elapsed"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

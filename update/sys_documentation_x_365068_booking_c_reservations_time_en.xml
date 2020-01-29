@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="time" label="Time(00:00:00)" language="en" table="x_365068_booking_c_reservations">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>time</element>
+            <help/>
+            <hint/>
+            <label>Time(00:00:00)</label>
+            <language>en</language>
+            <name>x_365068_booking_c_reservations</name>
+            <plural>Time(00:00:00)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-19 08:57:26</sys_created_on>
+            <sys_id>8620aaf51b710010cad7da49cc4bcbb2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Time(00:00:00)</sys_name>
+            <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+            <sys_update_name>sys_documentation_x_365068_booking_c_reservations_time_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-19 09:16:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

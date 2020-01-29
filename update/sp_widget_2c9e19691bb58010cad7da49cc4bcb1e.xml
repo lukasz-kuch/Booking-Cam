@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	c.onChange = function() {
+		c.members = true;
+		$("#tbl a").remove();
+		$("#title").show();
+		c.data.action = "addMembers";
+		c.server.update().then(function() {
+			c.data.action = undefined;
+		})
+	};
+	
+	$scope.showProb = function()  {
+		c.amount = c.data.problem;
+		$("#tbl a").remove();
+		for(var i = 0; i < c.data.problem; i++) {
+					c.number = $scope.data.problems[i].number;
+					c.short_description = $scope.data.problems[i].short_description
+					c.sys_id = $scope.data.problems[i].sys_id;
+					$("#tbl").append("<a href='?sys_id="+c.sys_id+"&view=sp&id=ticket&table=problem' class='list-group-item'>"+c.number+"<span> • </span>"+c.short_description+"</a>");
+		}	
+	};
+	
+	$scope.showReq = function()  {
+		c.amount = c.data.request;
+		$("#tbl a").remove();
+		for(var i = 0; i < c.data.request; i++) {
+					c.number = $scope.data.requests[i].number;
+					c.sys_id = $scope.data.requests[i].sys_id;
+					c.short_description = $scope.data.requests[i].short_description;
+					$("#tbl").append("<a href='?sys_id="+c.sys_id+"&view=sp&id=ticket&table=change_request' class='list-group-item'>"+c.number+"<span> • </span>"+c.short_description+"</a>")
+		}	
+	};
+	
+	$scope.showInc = function()  {
+		c.amount = c.data.incident;
+		$("#tbl a").remove();
+		for(var i = 0; i < c.data.incident; i++) {
+					c.number = $scope.data.incidents[i].number;
+					c.sys_id = $scope.data.incidents[i].sys_id;
+					c.short_description = $scope.data.incidents[i].short_description;
+					$("#tbl").append("<a href='?sys_id="+c.sys_id+"&view=sp&id=ticket&table=incident' class='list-group-item'>"+c.number+"<span> • </span>"+c.short_description+"</a>")
+		}	
+	};
+	
+	$scope.showActive = function() {
+		for( var i = 0; i < $scope.data.usrState.length; i++) {
+			c.userStatus = $scope.data.usrState[i].active;
+			console.log(c.userStatus);
+			c.userName = $scope.data.usrState[i].name;
+			console.log(c.userName);
+			if(c.userStatus == 'true') {
+			 $("a:contains('"+c.userName+"')").css("background-color", "lightgreen");
+			}
+		}
+	};
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.badge {
+background-color: green;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>team_members</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+
+}]]></link>
+        <name>Team Members</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+	if (!options.maximum_entries)
+		options.maximum_entries = 5;
+
+	var tables = ["problem", "incident", "change_request"];
+
+	data.list = [];
+	data.problems = [];
+	data.requests = [];
+	data.incidents = [];
+	data.members = [];
+	data.usrState = [];
+
+	/* e.g., data.table = $sp.getValue('table'); */
+	// get all group from table	
+	var gr = new GlideRecord("sys_user_grmember");
+	gr.addEncodedQuery('userDYNAMIC90d1921e5f510100a9ad2572f2b477fe');
+	gr.query();
+	while (gr.next()) {
+		data.list.push(gr.getDisplayValue('group'));
+	}
+
+	//get members of choosen group
+	if (input) {
+		if (input.action == "addMembers") {
+			
+			var grTeam = new GlideRecord("sys_user_group");
+			grTeam.addQuery('name', input.team);
+			grTeam.query();
+			while (grTeam.next()) {
+				var teamid = grTeam.getValue('sys_id');
+				tables.forEach(queryTable, teamid); //get records number assigned to the team ofeach table 
+				getRecords(teamid); //get records details assigned to the team for each table
+				
+				var usr = new GlideRecord("sys_user_grmember"); //query table to get all team memebers
+				usr.addQuery('group', teamid);
+				usr.query();
+				while (usr.next()) {
+					data.members.push(usr.getDisplayValue('user'));
+					var users = {};
+					var name = usr.getDisplayValue('user');
+					
+					var userTable = new GlideRecord('sys_user');
+					userTable.addQuery('name', name);
+					userTable.query();
+					while(userTable.next()) {
+						users.name = name;
+						var userID = userTable.getDisplayValue('user_name');
+						
+						var isActive = new GlideRecord('sys_user_session');
+						isActive.addEncodedQuery('nameISNOTEMPTY^invalidatedISEMPTY');
+						isActive.addQuery('name', userID);
+						isActive.query();
+						if (isActive.next()) {
+						users.active = isActive.getDisplayValue('active');
+						}
+					}
+					data.usrState.push(users);
+				}
+			}
+		}
+	}
+
+	function queryTable(item) {
+		var id = this.valueOf();
+		gr = new GlideAggregate(item); // query problem table to search all assigned record to the current team
+		gr.addAggregate('COUNT');
+		gr.addQuery('active', 'true');
+		gr.addQuery('assignment_group', id);
+		gr.query();
+		if (gr.next()) {
+			switch (item) {
+				case 'problem':
+					data.problem = gr.getAggregate('COUNT');
+					break;
+				case 'incident':
+					data.incident = gr.getAggregate('COUNT');
+					break;
+				case 'change_request':
+					data.request = gr.getAggregate('COUNT');
+					break;
+			}
+
+		}
+	}
+
+	function getRecords(id) {
+		var prb = new GlideRecord('problem');
+		prb.addQuery('assignment_group', id);
+		prb.addActiveQuery();
+		prb.query();
+		var prbIdx = 0;
+		while (prb.next()) {
+			if (prbIdx == options.maximum_entries)
+				break;
+			var prob = {};
+			prob.number = prb.getDisplayValue("number");
+			prob.short_description = prb.getDisplayValue("short_description");
+			prob.state = prb.getDisplayValue("state");
+			prob.sys_id = prb.getUniqueValue();
+			data.problems.push(prob);
+			prbIdx++;
+		}
+
+
+		var req = new GlideRecord('change_request');
+		req.addQuery('assignment_group', id);
+		req.addQuery('active', 'true');
+		req.query();
+		var reqIdx = 0;
+		while (req.next()) {
+			if (reqIdx == options.maximum_entries)
+				break;
+			var requ = {};
+			requ.number = req.getDisplayValue("number");
+			requ.short_description = req.getDisplayValue("short_description");
+			requ.state = req.getDisplayValue("state");
+			requ.sys_id = req.getUniqueValue();
+			data.requests.push(requ);
+			reqIdx++;
+
+		}
+
+		var inc = new GlideRecord('incident');
+		inc.addQuery('assignment_group', id);
+		inc.addQuery('active', 'true');
+		inc.query();
+		var incIdx = 0;
+		while (inc.next()) {
+			if (incIdx == options.maximum_entries)
+				break;
+			var inci = {};
+			inci.number = inc.getDisplayValue("number");
+			inci.short_description = inc.getDisplayValue("short_description");
+			inci.state = inc.getDisplayValue("state");
+			inci.sys_id = inc.getUniqueValue();
+			data.incidents.push(inci);
+			incIdx++;
+		}
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-18 09:32:25</sys_created_on>
+        <sys_id>2c9e19691bb58010cad7da49cc4bcb1e</sys_id>
+        <sys_mod_count>598</sys_mod_count>
+        <sys_name>Team Members</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sp_widget_2c9e19691bb58010cad7da49cc4bcb1e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-24 09:14:59</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">My Groups Work</h4>
+  </div>
+  <div class="panel-body m-b-n">
+    <div class="form-group">
+      <h4>Group</h4>
+      <select type="text" class="form-control" ng-model="c.data.team" ng-change="c.onChange()">
+        <option value="">--Select Group--</option>
+        <option ng-repeat="item in c.data.list">{{item}}</option>
+      </select>
+    </div>
+    <div ng-if="c.members" class="panel panel-default" style="padding: 20px">
+      <h4>Team members</h4>
+      <div>
+        <div class="list-group">
+          <a class="list-group-item" ng-repeat="user in c.data.members">{{user}}</a><br>
+          <button ng-click="showActive()" type="button" class="btn btn-success">Who is active ?</button>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <h4>Records assigned to the group</h4>
+      <div class="list-group">
+        <a href="javascript:void(0)" class="list-group-item" ng-click="showProb()">Problem<span
+            class="badge">{{c.data.problem}}</span></a>
+        <a href="javascript:void(0)" class="list-group-item" ng-click="showReq()">Change Request<span
+            class="badge">{{c.data.request}}</span></a>
+        <a href="javascript:void(0)" class="list-group-item" ng-click="showInc()">Incident<span
+            class="badge">{{c.data.incident}}</span></a>
+      </div>
+    </div><br>
+    <div class="form-group">
+      <div class="list-group" id="tbl">
+      </div>
+      <div class="panel-footer" ng-if="c.amount > c.options.maximum_entries">
+        <h4 class="panel-title">${First {{c.options.maximum_entries}} of {{c.amount}} shown}</h4>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dashboards">
+    <pa_dashboards action="DELETE">
+        <active>true</active>
+        <breakdown_source/>
+        <color>#ffffff</color>
+        <group/>
+        <groups/>
+        <is_breakdown>false</is_breakdown>
+        <managed_breakdown/>
+        <managed_publisher/>
+        <name>My  Booking Camera</name>
+        <no_tabs>false</no_tabs>
+        <order/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <restrict_to_roles/>
+        <role_override>true</role_override>
+        <roles/>
+        <should_migrate_permissions>false</should_migrate_permissions>
+        <sys_class_name>pa_dashboards</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 11:34:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8947237c1bf10010cad7da49cc4bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My  Booking Camera</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>pa_dashboards_8947237c1bf10010cad7da49cc4bcb59</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 11:34:12</sys_updated_on>
+        <users/>
+        <visible_to>2</visible_to>
+    </pa_dashboards>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</application>
+        <file_path/>
+        <instance_id>02976774dbc3734042b321c40596193a</instance_id>
+        <instance_name>dev90223</instance_name>
+        <name>pa_dashboards_8947237c1bf10010cad7da49cc4bcb59</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dashboards"><pa_dashboards action="INSERT_OR_UPDATE"><active>true</active><breakdown_source/><color>#ffffff</color><group/><groups/><is_breakdown>false</is_breakdown><managed_breakdown/><managed_publisher/><name>My  Booking Camera</name><no_tabs>false</no_tabs><order/><owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner><restrict_to_roles/><role_override>true</role_override><roles/><should_migrate_permissions>false</should_migrate_permissions><sys_class_name>pa_dashboards</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-12-16 11:34:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8947237c1bf10010cad7da49cc4bcb59</sys_id><sys_mod_count>0</sys_mod_count><sys_name>My  Booking Camera</sys_name><sys_overrides/><sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package><sys_policy/><sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope><sys_update_name>pa_dashboards_8947237c1bf10010cad7da49cc4bcb59</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-12-16 11:34:12</sys_updated_on><users/><visible_to>2</visible_to></pa_dashboards></record_update>]]></payload>
+        <payload_hash>1071144077</payload_hash>
+        <record_name>My  Booking Camera</record_name>
+        <reverted_from/>
+        <source>0a4627f71b610010cad7da49cc4bcb8f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 11:34:12</sys_created_on>
+        <sys_id>8547237c1bf10010cad7da49cc4bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f0e7cba1f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 11:34:12</sys_updated_on>
+        <type>Dashboard</type>
+        <update_guid>cd47237c3cf100102d7da6facfd39560</update_guid>
+        <update_guid_history>cd47237c3cf100102d7da6facfd39560:1071144077</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My  Booking Camera">d29133f41b350010cad7da49cc4bcb02</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-16 12:19:20</sys_created_on>
+        <sys_db_object display_value="" name="pa_dashboards">pa_dashboards</sys_db_object>
+        <sys_id>38c133b7725f4436a2b47f29222b1984</sys_id>
+        <sys_metadata>8947237c1bf10010cad7da49cc4bcb59</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My  Booking Camera</sys_name>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_scope_delete display_value="">2909777230cb48819ee492c6034a5679</sys_scope_delete>
+        <sys_update_name>pa_dashboards_8947237c1bf10010cad7da49cc4bcb59</sys_update_name>
+        <sys_update_version display_value="pa_dashboards_8947237c1bf10010cad7da49cc4bcb59">8547237c1bf10010cad7da49cc4bcb61</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-16 12:19:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

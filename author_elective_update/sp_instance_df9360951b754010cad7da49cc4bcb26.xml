@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">662324951b754010cad7da49cc4bcb97</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-17 10:36:20</sys_created_on>
+        <sys_id>df9360951b754010cad7da49cc4bcb26</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_update_name>sp_instance_df9360951b754010cad7da49cc4bcb26</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-17 10:50:02</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><a href=\"/sp?id=form&amp;table=x_365068_booking_c_reservations&amp;sys_id=-1&amp;view=ess\" data-mce-href=\"/sp?id=form&amp;table=x_365068_booking_c_reservations&amp;sys_id=-1&amp;view=ess\">Click here to make a termin.</a><a href=\"/sp?id=form&amp;table=ux_365068_booking_c_reservations&amp;sys_id=-1\" data-mce-href=\"/sp?id=form&amp;table=ux_365068_booking_c_reservations&amp;sys_id=-1\"></a></h1><h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"><a href=\"/sp?id=form&amp;table=ux_365068_booking_c_reservations&amp;sys_id=-1\" data-mce-href=\"/sp?id=form&amp;table=ux_365068_booking_c_reservations&amp;sys_id=-1\">Click here to make a termin</a></h1>",
+		"displayValue": "<h1 style=\"text-align: center;\"><a href=\"/sp?id=form&amp;table=x_365068_booking_c_reservations&amp;sys_id=-1&amp;view=ess\">Click here to make a termin.</a></h1>\n<h1 style=\"text-align: center;\"><a href=\"/sp?id=form&amp;table=ux_365068_booking_c_reservations&amp;sys_id=-1\">Click here to make a termin</a></h1>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=df9360951b754010cad7da49cc4bcb26"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</application>
+        <file_path/>
+        <instance_id>02976774dbc3734042b321c40596193a</instance_id>
+        <instance_name>dev90223</instance_name>
+        <name>sp_instance_df9360951b754010cad7da49cc4bcb26</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;662324951b754010cad7da49cc4bcb97&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-17 10:36:20&lt;/sys_created_on&gt;&lt;sys_id&gt;df9360951b754010cad7da49cc4bcb26&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Booking Camera" source="x_365068_booking_c"&gt;064627f71b610010cad7da49cc4bcb8d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Booking Camera"&gt;064627f71b610010cad7da49cc4bcb8d&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_df9360951b754010cad7da49cc4bcb26&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-17 10:50:02&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"&gt;&lt;a href=\"/sp?id=form&amp;amp;table=x_365068_booking_c_reservations&amp;amp;sys_id=-1&amp;amp;view=ess\" data-mce-href=\"/sp?id=form&amp;amp;table=x_365068_booking_c_reservations&amp;amp;sys_id=-1&amp;amp;view=ess\"&gt;Click here to make a termin.&lt;/a&gt;&lt;a href=\"/sp?id=form&amp;amp;table=ux_365068_booking_c_reservations&amp;amp;sys_id=-1\" data-mce-href=\"/sp?id=form&amp;amp;table=ux_365068_booking_c_reservations&amp;amp;sys_id=-1\"&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h1 style=\"text-align: center;\" data-mce-style=\"text-align: center;\"&gt;&lt;a href=\"/sp?id=form&amp;amp;table=ux_365068_booking_c_reservations&amp;amp;sys_id=-1\" data-mce-href=\"/sp?id=form&amp;amp;table=ux_365068_booking_c_reservations&amp;amp;sys_id=-1\"&gt;Click here to make a termin&lt;/a&gt;&lt;/h1&gt;",
+		"displayValue": "&lt;h1 style=\"text-align: center;\"&gt;&lt;a href=\"/sp?id=form&amp;amp;table=x_365068_booking_c_reservations&amp;amp;sys_id=-1&amp;amp;view=ess\"&gt;Click here to make a termin.&lt;/a&gt;&lt;/h1&gt;\n&lt;h1 style=\"text-align: center;\"&gt;&lt;a href=\"/sp?id=form&amp;amp;table=ux_365068_booking_c_reservations&amp;amp;sys_id=-1\"&gt;Click here to make a termin&lt;/a&gt;&lt;/h1&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=df9360951b754010cad7da49cc4bcb26"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-373608563</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0a4627f71b610010cad7da49cc4bcb8f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-17 10:50:02</sys_created_on>
+        <sys_id>44c624591b754010cad7da49cc4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f137aa6ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-17 10:50:02</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>ccc62459647540101b1c5c0bc9dbc343</update_guid>
+        <update_guid_history>ccc62459647540101b1c5c0bc9dbc343:-373608563,63166c1971754010962bd975d62e3c5b:-286582329,5af52c196b75401063a97849d02a4f94:-682197655,d0b5ecd5ab75401014ec302803a345af:690759402,e2252455477540107c41245c1934acef:-994539520,03f4acd5e9754010154ed479005eac7b:946429328,57936095cd754010bd609b234cce3128:1909627138</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">290724591b754010cad7da49cc4bcb81</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-17 10:51:14</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>a9e4b4343edf4a7897a506d205a39690</sys_id>
+        <sys_metadata>df9360951b754010cad7da49cc4bcb26</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
+        <sys_scope_delete display_value="">2909777230cb48819ee492c6034a5679</sys_scope_delete>
+        <sys_update_name>sp_instance_df9360951b754010cad7da49cc4bcb26</sys_update_name>
+        <sys_update_version display_value="sp_instance_df9360951b754010cad7da49cc4bcb26">44c624591b754010cad7da49cc4bcb44</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-17 10:51:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
