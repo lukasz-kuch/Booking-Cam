@@ -16,7 +16,7 @@
 
 function mainView() {
 
-top.window.location = "bc"; // redirect to main service portal page
+	top.window.location = "bc"; // redirect to main service portal page
 
 }
 
@@ -27,15 +27,12 @@ top.window.location = "bc"; // redirect to main service portal page
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f39b51591b394010cad7da49cc4bcbf9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
         <sys_name>Redirect to main portal page</sys_name>
         <sys_overrides/>
         <sys_package display_value="Booking Camera" source="x_365068_booking_c">064627f71b610010cad7da49cc4bcb8d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Booking Camera">064627f71b610010cad7da49cc4bcb8d</sys_scope>
         <sys_update_name>sys_script_client_f39b51591b394010cad7da49cc4bcbf9</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-12-18 08:14:34</sys_updated_on>
         <table>x_365068_booking_c_reservations</table>
         <type>onSubmit</type>
         <ui_type>1</ui_type>
